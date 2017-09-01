@@ -3,3 +3,10 @@
 {{else}}
   <h2 id="title"> Hello Ember! </h2>
 {{/if}}
+
+<button {{action 'toggleName' }}>Toggle Name</button>
+
+<br>
+
+{{numClicks}} times.
+<button {{action 'incrementClicks' }}>Increment</button>
