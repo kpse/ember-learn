@@ -11,6 +11,9 @@ Router.map(function() {
   this.route('parent', function() {
     this.route('child');
   });
+  this.route('todos', function() {
+    this.route('show', {path: '/:id'});
+  });
 });
 
 export default Router;
